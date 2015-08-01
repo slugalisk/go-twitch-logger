@@ -60,7 +60,6 @@ func (w *WSConn) Reconnect() {
 			log.Println("connected to", ch)
 			time.Sleep(500 * time.Millisecond)
 		}
-		w.Write("JOIN #cyborgmatt")
 	}()
 }
 
